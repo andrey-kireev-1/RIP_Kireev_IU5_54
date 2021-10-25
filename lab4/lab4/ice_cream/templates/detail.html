@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {% for cont in content %}
+
+        <h1>{{cont.name}}</h1>
+        <p>{{cont.description}}</p>
+        <div ><img style="width: 50%; height: 50%;" src="{{cont.photo.url}}"></div>
+	
+    {% endfor %}
+</body>
